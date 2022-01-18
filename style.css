@@ -1,0 +1,236 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+/*font-family: 'Sora', sans-serif;*/
+
+/*Formatações gerais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Nav*/
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(46, 46, 46, 0.6), rgba(46, 46, 46, 0.6)), url(imagens/pizza.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+nav img{
+    width: 40%;
+}
+
+main{
+    margin: 140px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main h2{
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5em;
+}
+
+/*Scroll*/
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(235, 235, 235);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #be3600;
+    border: 3px solid #be3600;
+  }
+
+.pizza{
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+}
+
+.pizza:hover{
+    max-width: 100%;
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+.pizza img{
+    margin-top: -50px;
+}
+
+.pizza img:hover{
+    max-width: 200px;
+   transform:  rotate(45deg);
+   transition-duration: 2s;
+}
+
+.pizza h3{
+    font-family: 'Sora', sans-serif;
+    color: #2E2E2E;
+    margin-top: 20px;
+}
+
+.pizza p{
+    padding-top: 15px;
+    width: 80%;
+    font-family: 'Sora', sans-serif;
+    color: #616161;
+    font-size: 0.9em;
+}
+
+.pizza .preco{
+    padding-top: 25px;
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    color: #2E2E2E;
+    font-size: 2em;
+}
+
+.pizza button{
+    z-index: 0;
+    position: absolute;
+    margin-top: 320px;
+    text-align: center;
+    width: 160px;
+    height: 30px;
+    border: none;
+    background: #FFA200;
+    border-radius: 25px;
+    color: #2E2E2E;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.pizza button:hover{
+    cursor: pointer;
+    background: #ffba44;
+}
+
+.fundo{
+    z-index: -1;
+    margin-top: 40px;
+    position: absolute;
+    background: #FEF6F4;
+    border-radius: 25px;
+    width: 250px;
+    height: 275px;
+}
+
+section{
+    background: #FCFCFC;;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 10% 50px 10%;
+}
+
+.imagem{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imagens/imagem-sobre.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.sobre{
+    width: 60%;
+    padding: 20px 100px;
+    margin: 0 auto;
+}
+
+.sobre p{
+    margin: 40px 0 0 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 25px;
+    color: #2E2E2E;
+}
+
+.sobre button{
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: #FFA200;
+    border-radius: 25px;
+    color: #2E2E2E;
+    margin: 30px 0 0 0;
+}
+
+.sobre button:hover{
+    cursor: pointer;
+    background: #ffba44;
+}
+
+footer{
+    background: #2E2E2E;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    font-weight: 600;
+}
+
+@media (max-width: 1000px){
+    section{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagem{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .sobre{
+        padding: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .sobre img{
+        width: 50%;
+    }
+}
